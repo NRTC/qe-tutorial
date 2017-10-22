@@ -59,9 +59,7 @@ degauss= 0.01 ,
 smearing= 'gaussian',
 ```
 
-که ibrav مشخص کننده نوع شبکه ی بلوری است، همانطور که میدانید ما 14 نوع ساختار بلوری داریم. برای مثال در شکل 8 پنج نمونه از آن را مشاهده می‌کنید. برای ibrav صفر، شما می‌توانید ساختار دلخواه خود را بسازید. برای ibrav=1 که به آن sc می گویند سلول واحد آن یک اتم دارد و هر اتم، 6 اتم در همسایگی خود دارد همچنین برای ibrav=3 که به bcc معروف است سلول واحد آن 2 اتم و در همسایگی هر اتم 8 اتم وجود دارد. در ibrav=2 که fcc نام دارد سلول واحد آن 4 اتم و در شبکه بلوری هر اتم، 8 اتم در اطراف خود دارد همچنین ibrav=4 ساختار هگزاگونال می‌باشد. در ادامه cellbm ها را توضیح می دهیم، می دانیم هر سلول واحد با 6 پارامتر در فضا تعیین می‌شود با توجه به این  امر برای بردارهای این ساختار ها و زایه بین بردار های آن ها  از \(6-1\)cllbm استفاده می کنیم. 
-
-
+که ibrav مشخص کننده نوع شبکه ی بلوری است، همانطور که میدانید ما 14 نوع ساختار بلوری داریم. برای مثال در شکل 8 پنج نمونه از آن را مشاهده می‌کنید. برای ibrav صفر، شما می‌توانید ساختار دلخواه خود را بسازید. برای ibrav=1 که به آن sc می گویند سلول واحد آن یک اتم دارد و هر اتم، 6 اتم در همسایگی خود دارد همچنین برای ibrav=3 که به bcc معروف است سلول واحد آن 2 اتم و در همسایگی هر اتم 8 اتم وجود دارد. در ibrav=2 که fcc نام دارد سلول واحد آن 4 اتم و در شبکه بلوری هر اتم، 8 اتم در اطراف خود دارد همچنین ibrav=4 ساختار هگزاگونال می‌باشد. در ادامه cellbm ها را توضیح می دهیم، می دانیم هر سلول واحد با 6 پارامتر در فضا تعیین می‌شود با توجه به این  امر برای بردارهای این ساختار ها و زایه بین بردار های آن ها  از \(6-1\)cllbm استفاده می کنیم.
 
 شکل 8 نمونه ای از ibriv شبکه های بلوری
 
@@ -70,16 +68,42 @@ Celldom  ها بسته به نوع ساختار ها، طول بردار یا ف
 شکل 9 celldm ها و توضیحات آن ها
 
 ```
-ibrav                                            INTEGER
-                                         Status: REQUIRED
-Bravais-Lattice index. If ibrav /= 0, specify EITHER [ celldm(1)-celldm(6) ] OR [A,B,C,cosAB,cosAC,cosBC ] but NOT both.
-the lattice parameter "alat" is set to alat = celldm(1) (in a.u.) or alat = A (in Angstrom): 
-see below for the other parameters.
-For ibrav = 0 specify the lattice vactors in
-                                         
+ibrav	INTEGER
+Status:	REQUIRED
+  Bravais-lattice index. If ibrav /= 0, specify EITHER
+  [ celldm(1)-celldm(6) ] OR [ A, B, C, cosAB, cosAC, cosBC ]
+  but NOT both. The lattice parameter "alat" is set to
+  alat = celldm(1) (in a.u.) or alat = A (in Angstrom);
+  see below for the other parameters.
+  For ibrav=0 specify the lattice vectors in CELL_PARAMETERS,
+  optionally the lattice parameter alat = celldm(1) (in a.u.)
+  or = A (in Angstrom), or else it is taken from CELL_PARAMETERS
+
+ibrav      structure                   celldm(2)-celldm(6)
+                                     or: b,c,cosab,cosac,cosbc
+  0          free
+      crystal axis provided in input: see card CELL_PARAMETERS
+
+  1          cubic P (sc)
+      v1 = a(1,0,0),  v2 = a(0,1,0),  v3 = a(0,0,1)
+
+  2          cubic F (fcc)
+      v1 = (a/2)(-1,0,1),  v2 = (a/2)(0,1,1), v3 = (a/2)(-1,1,0)
+
+  3          cubic I (bcc)
+      v1 = (a/2)(1,1,1),  v2 = (a/2)(-1,1,1),  v3 = (a/2)(-1,-1,1)
+
+  4          Hexagonal and Trigonal P        celldm(3)=c/a
+      v1 = a(1,0,0),  v2 = a(-1/2,sqrt(3)/2,0),  v3 = a(0,0,c/a)
+      .
+      .
+      .
+      .
 ```
 
-                                                                                            شکل 8 نمونه ای از ibriv شبکه های بلوری 
+```
+                                                                                        شکل 8 نمونه ای از ibriv شبکه های بلوری 
+```
 
 nband بیانگر تعداد باند های اتم مورد نظر می‌باشد به عنوان مثال در این ساختار فقط یک نوع اتم کربن داریم ntyp  آن برابر یک می‌باشد و چون دو اتم کربن داریم،nat  برابر 2 و چون الکترون های لایه ظرفیت کربن 4 می‌باشد پس   nbad 8 می‌شود \(شکل 10\).
 
