@@ -4,6 +4,7 @@
 * [قدردانی\|Acknowledge](Acknowledge.md)
 * [نحوه باز کردن برنامه\|How to start Software](Start.md)
 * [ساختار فایل ورودی\|Input File Structre](InputFile.md)
+* [اجرای کد](.md)
 * [اجرای کد جهت بدست آوردن انرژی کات و کاپوینت](RunCut.md)
 * [بهینه کردن ساختار](OptimizeStruct/README.md)
   * [Relax](OptimizeStruct/Relax.md)
@@ -13,7 +14,7 @@
 * [اجرای نه فایل جهت خروج اطلاعات مورد نظر](RunNineFile.md)
 * [اجرای بند استراکچر](RunBandStructure/README.md)
   * [ساختار نواری چیست](RunBandStructure/WhatBandGap.md)
-* [DOS\|چگالی حالتهای الکترونی](DOS.md)
+* اجرای کد
 * [بدست آوردنChargeDens  \(تراکم چگالی بار\)](ChargeDen.md)
 * [تابع واندروالس](VanDerWaalsFun.md)
 * [تابع B3LYP](B3LYPFun.md)
@@ -26,6 +27,6 @@
 * [بخش کاربردی LSDA + U](LSDA.md)
 * [بررسی هابارد FeO](HubbardFeO.md)
 * [محاسبه U](CompU.md)
-* [بررسی اتمFe](FeAtom.md)
 * [بررسی Nio](ComputeNiO.md)
+* [بررسی اتمFe](FeAtom.md)
 
