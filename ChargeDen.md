@@ -1,5 +1,5 @@
 
-1.10- بدست آوردنChargeDens  (تراکم چگالی بار)
+ بدست آوردنChargeDens  (تراکم چگالی بار)
 برای بدست آوردن و مشاهده تراکم چگالی بار لازم است اجرای  scf و ChargeDens را انجام دهیم.
 ChargeDens:
 pw.x <scf.in> scf.out
