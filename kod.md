@@ -17,11 +17,20 @@ Mpiexec  –n 2 pw.x < Si.sample.in > Si.sample.out
 
 که در قسمت بالا n  تعداد هسته های درگیر می‌باشد.
 
-![](/assets/33.png)
+![](/assets/33.png)![](/assets/18.png)
 
 شکل 18 باز کردن پنجره ترمینال
 
 سپس پس از اجرای برنامه total energy برای ما حائز اهمیت است که همانطور که در شکل 19 مشاهده می‌کنید جز اطلاعات خروجی است و با ! مشخص می‌شود. برای تشخیص ران کامل به دستور JOB DONE  در انتهای برنامه خروجی توجه نمایید و همچنین برای جزییات بیشتر می‌توانید به time  \(pwscf \) و  \(kohn shansham wavefunction\) در خروجی توجه نمایید.
 
-@@@شکل 19 total enrgy  در خروجی گرافن
+```
+     the Fermi energy is    -2.1142 ev
+
+!    total energy              =     -22.53912642 Ry
+     Harris-Foulkes estimate   =     -22.53912596 Ry
+     estimated scf accuracy    <       0.00000052 Ry
+
+```
+
+شکل 19 total enrgy  در خروجی گرافن
 
