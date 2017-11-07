@@ -91,7 +91,6 @@ ibrav      structure                   celldm(2)-celldm(6)
       .
       .
       .
-
 ```
 
 شکل 8 نمونه ای از ibriv شبکه ها
@@ -145,7 +144,7 @@ k-point, not the number of bands per k-point, is doubled
 برای توضیحات بیشتر می‌توانید از فولدر Doc  استفاده کنید، که پس از باز کردن برنامه  vmware  مسیر زیر را مانند شکل 11 طی کنید. البته توجه داشته باشید که این مسیر بنا یه ورژن اسپرسو نصبی شما می‌تواند کمی تغییر کند.  
                                                                                                                     Vmware.  root.  softwares.  espresso5.  espresso5.1.2.  doc
 
-![](/assets/200.png)
+![](/assets/200.png)![](/assets/11.png)
 
 شکل 11مسیر فایل Doc جهت توضیحات کامل ساختار ورودی  
 و همچنین میدانیم:
