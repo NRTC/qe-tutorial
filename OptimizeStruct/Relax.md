@@ -5,7 +5,7 @@
 1-relax  
  2-vcrelax
 
-![](/assets/26.png)![](/assets/26.png)
+![](/assets/26.png)
 
 شکل 26  تغییر جایگاه اتمی در سلول واحد برای یافتن پایین ترین انرژی
 
@@ -68,5 +68,18 @@ root@nrtc:~/Desktop/relax# pw.x <relax.in> relax.out
 
 خروجی برنامه یک فایل با نام relax.out خواهد بود. انتهای محتوای برنامه خروجی مانند شکل 29 مختصات نهایی سیستم مشخص شده است که وجود final energy الزامی است و پس از ریلکس کردن  \(celldm 1\) مختصات اتم ها را در scf با توجه به  ATOMIC POSITION خروجی ریکس تغییر می دهیم.
 
-@@@شکل 29  قسمتی خروجی ریلکس
+```
+
+     Final energy   =     -26.0425801221 Ry
+Begin final coordinates
+
+ATOMIC_POSITIONS (angstrom)
+B        1.262582917   0.725489067   0.000000000
+N       -0.006852917   1.449510933   0.000000000
+End final coordinates
+
+
+```
+
+شکل 29  قسمتی خروجی ریلکس
 
