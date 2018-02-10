@@ -25,7 +25,7 @@
 * [بخش کاربردی LSDA + U](LSDA.md)
 * [بررسی هابارد FeO](HubbardFeO.md)
 * [محاسبه U](CompU.md)
-* [بررسی Nio](ComputeNiO.md)
 * [بررسی اتمFe](FeAtom.md)
+* [بررسی Nio](ComputeNiO.md)
 * [پایان](.md)
 
