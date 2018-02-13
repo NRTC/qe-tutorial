@@ -28,5 +28,5 @@
 * [بررسی اتمFe](FeAtom.md)
 * [بررسی Nio](ComputeNiO.md)
 * [پایان](.md)
-* [ditail.md]( %28DOS%29 چگالی حالتهای الکترونی.md)
+* [\(DOS\) چگالی حالتهای الکترونی.md](dos-md.md)
 
