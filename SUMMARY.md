@@ -18,7 +18,6 @@
   * [بدست آوردن تراکم چگالی بار .md](md.md)
   * [خواص اپتیکی .md](RunBandStructure/md.md)
     * [تابع اتلاف انرژی .md](RunBandStructure/md/md.md)
-    * [مقدار گاف .md](RunBandStructure/md/md.md)
 * [تابع واندروالس](VanDerWaalsFun.md)
 * [فنون‌ها](Methods.md)
 * [محاسبه خواص مغناطیسی مواد](MagneticProperties.md)
