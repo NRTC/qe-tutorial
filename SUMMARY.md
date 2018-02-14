@@ -15,7 +15,7 @@
 * [اجرای بند استراکچر](RunBandStructure/README.md)
   * [ساختار نواری چیست](RunBandStructure/WhatBandGap.md)
   * [Dos.md](RunBandStructure/dosmd.md)
-* [بدست آوردنChargeDens  \(تراکم چگالی بار\)](ChargeDen.md)
+  * [بدست آوردن تراکم چگالی بار .md](md.md)
 * [تابع واندروالس](VanDerWaalsFun.md)
 * [فنون‌ها](Methods.md)
 * [محاسبه خواص مغناطیسی مواد](MagneticProperties.md)
@@ -29,5 +29,4 @@
 * [بررسی اتمFe](FeAtom.md)
 * [بررسی Nio](ComputeNiO.md)
 * [پایان](.md)
-* اجرای نه فایل جهت خروج اطلاعات مورد نظر.md
 
