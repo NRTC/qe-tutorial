@@ -14,6 +14,7 @@
 * [اجرای نه فایل جهت خروج اطلاعات مورد نظر.md](md.md)
 * [اجرای بند استراکچر](RunBandStructure/README.md)
   * [ساختار نواری چیست](RunBandStructure/WhatBandGap.md)
+  * [Dos.md](RunBandStructure/dosmd.md)
 * [بدست آوردنChargeDens  \(تراکم چگالی بار\)](ChargeDen.md)
 * [تابع واندروالس](VanDerWaalsFun.md)
 * [فنون‌ها](Methods.md)
