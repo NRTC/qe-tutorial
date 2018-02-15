@@ -19,6 +19,7 @@
   * [خواص اپتیکی .md](RunBandStructure/md.md)
     * [تابع اتلاف انرژی .md](RunBandStructure/md/md.md)
 * [تابع واندروالس](VanDerWaalsFun.md)
+* [تابع P3lyp .md](p3lyp-md.md)
 * [فنون‌ها](Methods.md)
 * [محاسبه خواص مغناطیسی مواد](MagneticProperties.md)
 * [رسم ساختار نواری در کوانتوم اسپرسو](BandGapQE.md)
