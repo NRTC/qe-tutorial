@@ -1,8 +1,8 @@
-# ‫کتاب آموزش کوآنتم اسپرسو به فارسی‬
+# ‫Quantum ESPERSSO Tutorial in Persian‬
 
-# 
 
-# ‭Quantum ESPERSSO Tutorial in Persian‬
+
+# کتاب آموزش کوآنتم اسپرسو به فارسی‬
 
 ---
 
