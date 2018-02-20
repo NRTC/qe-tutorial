@@ -4,16 +4,20 @@
 
 ‫پس از نصب برنامه برای ورود ابتدا فضای VMware Workstation را باز کرده سپس مانند شکل 1 وارد home شده و بروی قسمت open a virtual machine کلیک می‌کنیم.‬
 {% center %}
+
 ![](/assets/1.png)
 ‫شکل ۱ فضای پوشه‬ home
+
 {% endcenter %}
 
 ‫در نتیجه پنجره ای جدید مانند شکل 2 باز می‌شود، که فراخوانی Debian را برای ما انجام می‌دهد.‬
 
 {% center %}
+
 ![](/assets/2.png)
 
 ‫شکل ۲ فراخوانی‬ Debian
+
 {% endcenter %}
 
 ‫پس از فراخوانی Debian نوبت به ورود به برنامه VMware می‌شود. مانند شکل 3 بر روی قسمت  Power on this virtual machin کلیک کرده که برنامه شروع به اجرا می‌کند.‬
