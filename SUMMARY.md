@@ -20,7 +20,7 @@
   * [تابع اتلاف انرژی](OpticalProperties/Waste.md)
 * [تابع واندروالس](VanDerWaalsFun.md)
 * [B3LYP تابع](B3LYPFun.md)
-* [تابع hse .md](hse-md.md)
+* [HSE تابع](HSE.md)
 * [فنون‌ها](Methods.md)
 * [محاسبه خواص مغناطیسی مواد](MagneticProperties.md)
 * [رسم ساختار نواری در کوانتوم اسپرسو](BandGapQE.md)
