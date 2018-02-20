@@ -10,7 +10,7 @@
   * [ریلکس کردن\|Relax](OptimizeStruct/Relax.md)
   * [به دست آورن نمودار تنش و استرس\|Find Stress & Strain](OptimizeStruct/StressAndStrein.md)
   * [VC Relax](OptimizeStruct/VC-Relax.md)
-* [بدست آوردن انرژی پیوندی کلر](CLBondEnergy.md)
+* [بدست آوردن انرژی پیوندی کلر\|Find Cl Bond Energy](CLBondEnergy.md)
 * [اجرای نه فایل جهت خروج اطلاعات مورد نظر](md.md)
 * [اجرای بند استراکچر](RunBandStructure/README.md)
   * [ساختار نواری چیست](RunBandStructure/WhatBandGap.md)
