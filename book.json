@@ -1,4 +1,3 @@
 {
-   "plugins": ["block-align" ,
-               "image-captions"]
+   "plugins": ["block-align" ,"image-captions"]
 }
