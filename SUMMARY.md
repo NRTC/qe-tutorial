@@ -19,7 +19,7 @@
 * [خواص اپتیکی\|Optical Properties](OpticalProperties/README.md)
   * [تابع اتلاف انرژی](OpticalProperties/Waste.md)
 * [تابع واندروالس](VanDerWaalsFun.md)
-* [تابع P3lyp .md](p3lyp-md.md)
+* [B3LYP تابع](B3LYPFun.md)
 * [تابع hse .md](hse-md.md)
 * [فنون‌ها](Methods.md)
 * [محاسبه خواص مغناطیسی مواد](MagneticProperties.md)
