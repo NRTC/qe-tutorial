@@ -32,6 +32,6 @@
 * [محاسبه U](CompU.md)
 * [بررسی اتمFe](FeAtom.md)
 * [بررسی Nio](ComputeNiO.md)
-* [پایان](.md)
 * [محاسبه چگالی حالت الکترونی مواد مغناطیسی](MagneticProperties.md)
+* [پایان](.md)
 
