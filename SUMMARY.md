@@ -2,9 +2,9 @@
 
 * [مقدمه\|Introduction](README.md)
 * [قدردانی\|Acknowledge](Acknowledge.md)
-* [نحوه باز کردن برنامه\|How to start Software](Start.md)
+* [نحوه باز کردن برنامه\|How to start Software](Start-Software.md)
 * [ساختار فایل ورودی\|Input File Structre](InputFile.md)
-* [اجرای کد](kod.md)
+* [اجرای کد\|Run The Software](Run-Software.md)
 * [اجرای کد جهت بدست آوردن انرژی کات و کاپوینت](RunCut.md)
 * [بهینه کردن ساختار](OptimizeStruct/README.md)
   * [Relax](OptimizeStruct/Relax.md)
