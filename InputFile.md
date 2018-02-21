@@ -22,7 +22,7 @@ tstress = .true
 ```
 calculation
 
-                     Default: 'scf'
+          Default: 'scf'
 a string describing the task to be performed:
   'scf',
   'nscf',
@@ -43,7 +43,7 @@ a string describing the task to be performed:
 قسمت دوم  SYSTEM  می‌تواند شامل بخش های زیر باشد و توضیحات جزییات آنها در شکل های 1تا 7 به تفصیل داده شده است.
 
 ```
-SYSTEM
+& SYSTEM
 ibrav = 4,
 celldm(1) = 4.6354 ,
 celldm(3) = 7 ,
@@ -57,11 +57,11 @@ degauss= 0.01 ,
 smearing= 'gaussian',
 ```
 
-که ibrav مشخص کننده نوع شبکه ی بلوری است، همانطور که میدانید ما 14 نوع ساختار بلوری داریم. برای مثال در شکل 8 پنج نمونه از آن را مشاهده می‌کنید. برای ibrav صفر، شما می‌توانید ساختار دلخواه خود را بسازید. برای ibrav=1 که به آن sc می گویند سلول واحد آن یک اتم دارد و هر اتم، 6 اتم در همسایگی خود دارد همچنین برای ibrav=3 که به bcc معروف است سلول واحد آن 2 اتم و در همسایگی هر اتم 8 اتم وجود دارد. در ibrav=2 که fcc نام دارد سلول واحد آن 4 اتم و در شبکه بلوری هر اتم، 8 اتم در اطراف خود دارد همچنین ibrav=4 ساختار هگزاگونال می‌باشد. در ادامه celldm ها را توضیح می دهیم، می دانیم هر سلول واحد با 6 پارامتر در فضا تعیین می‌شود با توجه به این  امر برای بردارهای این ساختار ها و زایه بین بردار های آن ها  از \(6-1\)celldm استفاده می کنیم.
+که ibrav مشخص کننده نوع شبکه ی بلوری است، همانطور که میدانید ما 14 نوع ساختار بلوری داریم. برای مثال در شکل 8 پنج نمونه از آن را مشاهده می‌کنید. برای ibrav صفر، شما می‌توانید ساختار دلخواه خود را بسازید. برای ibrav=1 که به آن sc می گویند سلول واحد آن یک اتم دارد و هر اتم، 6 اتم در همسایگی خود دارد همچنین برای ibrav=3 که به bcc معروف است سلول واحد آن 2 اتم و در همسایگی هر اتم 8 اتم وجود دارد. در ibrav=2 که fcc نام دارد سلول واحد آن 4 اتم و در شبکه بلوری هر اتم، 8 اتم در اطراف خود دارد همچنین ibrav=4 ساختار هگزاگونال می‌باشد. در ادامه celldm ها را توضیح می دهیم، می دانیم هر سلول واحد با 6 پارامتر در فضا تعیین می‌شود با توجه به این  امر برای بردارهای این ساختارها و زایه بین بردار های آن ها  از \(6-1\)celldm استفاده می کنیم.
 
 ```
-ibrav    INTEGER
-Status:    REQUIRED
+ibrav              INTEGER
+       Status:    REQUIRED
   Bravais-lattice index. If ibrav /= 0, specify EITHER
   [ celldm(1)-celldm(6) ] OR [ A, B, C, cosAB, cosAC, cosBC ]
   but NOT both. The lattice parameter "alat" is set to
@@ -98,8 +98,8 @@ ibrav      structure                   celldm(2)-celldm(6)
 در واقع clledm ها بسته به نوع ساختار ها، طول بردار یا فاصله ی بین اتم های ساختار بلوری را مشخص می‌کنند. در شکل 9 بیان می‌کند که celldm\(1\)=a مقدار بردار a  و celldm\(2\)=b/a وcelldm\(3\)=c/a می‌باشد همچنین celldm\(4\)=cosα و celldm\(5\)=cosβ و celldm\(6\)=cos γ است.
 
 ```
-celldm(i), i=1,6    REAL
-See:    ibrav
+celldm(i), i=1,6                    REAL
+                            See:    ibrav
 Crystallographic constants - see the ibrav variable.
 Specify either these OR A,B,C,cosAB,cosBC,cosAC NOT both.
 Only needed values (depending on "ibrav") must be specified
@@ -132,9 +132,9 @@ cell vectors are read from card CELL_PARAMETERS.
 که nband بیانگر تعداد باند های اتم مورد نظر می‌باشد به عنوان مثال در این ساختار فقط یک نوع اتم کربن داریم ntyp آن برابر یک می‌باشد و چون دو اتم کربن داریم،nat برابر 2 و چون الکترون های لایه ظرفیت کربن 4 می‌باشد پس nbad=8 می‌شود.
 
 ```
-nbnd    INTEGER
-Default:    for an insulator, nbnd = number of valence bands (nbnd = # of electrons /2); 
-for a metal, 20% more (minimum 4 more)
+nbnd             INTEGER
+     Default:    for an insulator, nbnd = number of valence bands (nbnd = # of electrons /2); for a metal, 
+                 20% more (minimum 4 more)
 Number of electronic states (bands) to be calculated.
 Note that in spin-polarized calculations the number of
 k-point, not the number of bands per k-point, is doubled
@@ -158,16 +158,16 @@ k-point, not the number of bands per k-point, is doubled
 انرژی cutoff  انرژی سنتیک تابع موجی بر حسب ریدبرگ می‌باشد که باید همگرا شود. همچنین ecutrho ،میتواند 8  تا 10 برابر انرژی کات می‌باشد که برای شبه پتانسیل های ultrasoft استفاده می‌شود . برای شبه پتانسیل norm-conserving و PAW چهار برابر انرژی کات می‌باشد که نیاز به تایپ آن نیست بر حسب  قرار داد خودش چهار برابر در نظر می‌گیرد و توضیحات آن در شکل 13 داده شده است.
 
 ```
-ecutwfc    REAL
-Status:    REQUIRED
+ecutwfc               REAL
+           Status:    REQUIRED
 kinetic energy cutoff (Ry) for wavefunctions
 ```
 
 شکل 12 انرژی کات
 
 ```
-ecutrho    REAL
-Default:    4 * ecutwfc
+ecutrho                REAL
+           Default:    4 * ecutwfc
 Kinetic energy cutoff (Ry) for charge density and potential
 For norm-conserving pseudopotential you should stick to the
 default value, you can reduce it by a little but it will
@@ -187,41 +187,41 @@ to be accurately converged.
 occupations را برای نارسانا ها fixed در نظر می گیریم. توجه داشته باشید برای محاسبه  DOS در nscf،  occupations را tetrahedra می‌گذاریم.
 
 ```
-occupations    CHARACTER
+occupations              CHARACTER
  Available options are:
 
 'smearing' :
-gaussian smearing for metals;
-see variables smearing and degauss
+             gaussian smearing for metals;
+             see variables smearing and degauss
 
 'tetrahedra' :
-Tetrahedron method, Bloechl's version:
-P.E. Bloechl, PRB 49, 16223 (1994)
-Requires uniform grid of k-points, to be
-automatically generated (see card K_POINTS).
-Well suited for calculation of DOS,
-less so (because not variational) for
-force/optimization/dynamics calculations.
+             Tetrahedron method, Bloechl's version:
+             P.E. Bloechl, PRB 49, 16223 (1994)
+             Requires uniform grid of k-points, to be
+             automatically generated (see card K_POINTS).
+             Well suited for calculation of DOS,
+             less so (because not variational) for
+             force/optimization/dynamics calculations.
 
 'tetrahedra_lin' :
-Original linear tetrahedron method.
-To be used only as a reference;
-the optimized tetrahedron method is more efficient.
+             Original linear tetrahedron method.
+             To be used only as a reference;
+             the optimized tetrahedron method is more efficient.
 
 'tetrahedra_opt' :
-Optimized tetrahedron method:
-see M. Kawamura, PRB 89, 094515 (2014).
-Can be used for phonon calculations as well.
+             Optimized tetrahedron method:
+             see M. Kawamura, PRB 89, 094515 (2014).
+             Can be used for phonon calculations as well.
 
 'fixed' :
-for insulators with a gap
+             for insulators with a gap
 
 'from_input' :
-The occupation are read from input file,
-card OCCUPATIONS. Option valid only for a
-single k-point, requires nbnd to be set
-in input. Occupations should be consistent
-with the value of tot_charge.
+             The occupation are read from input file,
+             card OCCUPATIONS. Option valid only for a
+             single k-point, requires nbnd to be set
+             in input. Occupations should be consistent
+             with the value of tot_charge.
 ```
 
 شکل 14 توضیحات occupations
@@ -232,8 +232,8 @@ ELECTRONS
                   conv\_thr = 1.D-6 ,
 
 ```
-conv_thr_multi    REAL
-Default:    1.D-1
+conv_thr_multi        REAL
+          Default:    1.D-1
 When adaptive_thr = .TRUE. the convergence threshold for
 each scf cycle is given by:
 max( conv_thr, conv_thr_multi * dexx )
@@ -243,23 +243,29 @@ max( conv_thr, conv_thr_multi * dexx )
 و قسمت چهارم ATOMIC\_SPECIES عدد اتمی و نوع پتانسیل عنصر مورد استفاده را مشخص می‌کند که در فایل ps  دخیره شده است و در بخش انواع پتانسیل ها که شامل \(norm-conserving، ultrasoft و PAW\) به آن اشاره خواهیم کرد.  
 در قسنت C.pz-vbc.UPF حرف C نشان دهنده اتم کربن و PZ نوع تقریب را نشان می دهد که اگر PZ  باشد از تقریب LDA \(موادی با چگالی بار یکنواخت\) و اگر pbe باشد از تقریب GGA \(موادی با چگالی بار متفاوت\) استفاده کرده ایم. شبه پتانسیل ها  را با پسوند UPF ذخیره می‌کنیم و حروف قبلی نشان دهنده نام نویسنده می‌باشد.
 
-ATOMIC\_SPECIES  
-C    12.0107    C.pz-vbc.UPF  
+```
+ATOMIC_SPECIES
+C    12.0107    C.pz-vbc.UPF
 C    12.0107    C.pbe.vbc.UPF
+```
 
 در قسسمت پنجم ATOMIC\_POSITIONS مختصات اتم های مورد نظر را مشخص می‌کنیم که می‌تواند بر حسب \( alat \| bohr \| angstrom \| crystal \| crystal\_sg\) باشد که اگر بر حسب alot یا  crystal باشد، زمانی که می خواهیم ریلکس کنیم، فقط کافی است تغییرات را روی\( celldm 1\) انجام دهیم. در ادامه فصل  بخش1.5 به توضیح ریلکس پرداخته شده است.
 
-ATOMIC\_POSITIONS \(angstrom\)  
-C        0.000000000   0  0  
+```
+ATOMIC_POSITIONS (angstrom)
+C        0.000000000   0  0
 C        0.000000000   1.418135710  0
+```
 
-در انتها قسمت K\_POINTS است  که می‌تواند بر حسب tpiba \| automatic \| crystal \| gamma\) \( fhan tpiba\_b \| crystal\_b \| tpiba\_c \| crystal\_c باشد. از tpiba در محاسبات بند استراکچر بخش 1.8 استفاده می‌کنیم. در واقع نقاط در فضای حقیقی با تبدیلی به فضای وارون تبدیل می‌شوند  \(ضریبa /2π\) و هر سلول واحد در فضای حقیقی با سه بردار a1،a2  و a3 مشخص می‌شود که اگر نقطه ای در این فضا نسبت به دستگاه مختصات کارتزین سنجیده شود از واحد \(angstrom\) استفاده می‌کنیم و اگر نقطه مذکور نسبت به بردار های a1،a2  و a3 سنجیده شود از واحد \( \(crystal\) استفاده می‌کنیم. همچنین چین شرایطی در فضای وارون نیز وجود دارد که اگر نقطه ای در فضای وارون نسبت به دستگاه مختصات کارتزین باشد واحد آن tpiba و اگر نسبت به بردار های b1,b2 و b3 که بردار های سلول واحد در این فضا هستند گزارش شود از واحد \( \(crystal\) استفاده می‌کنیم. سه رقم آخر مختصات شروع kpoint هاست که می‌تواند 1 1 1 نیز باشد که به معنای شیفت شروع این نقطه هاست. با این شیفت ها می‌توان ماتریسی را که قطری نیست، قطری کرد که روابط بهتر محاسبه شود. همچنین اگر کاپوینت در حالت gamma  باشد k=0 \(بردار موج 0 0 0\)است و برای مطالعه روی مولکول ها کاربرد دارد.  
+در انتها قسمت K\_POINTS است  که می‌تواند بر حسب tpiba \| automatic \| crystal \| gamma\) \( fhan tpiba\_b \| crystal\_b \| tpiba\_c \| crystal\_c باشد. از tpiba در محاسبات بند استراکچر بخش 1.8 استفاده می‌کنیم. در واقع نقاط در فضای حقیقی با تبدیلی به فضای وارون تبدیل می‌شوند  \(ضریبa /2π\) و هر سلول واحد درفضای حقیقی با سه بردار a1،a2  و a3 مشخص می‌شود که اگر نقطه ای در این فضا نسبت به دستگاه مختصات کارتزین سنجیده شود از واحد \(angstrom\) استفاده می‌کنیم و اگر نقطه مذکور نسبت به بردار های a1،a2  و a3 سنجیده شود از واحد \( \(crystal\) استفاده می‌کنیم. همچنین چین شرایطی در فضای وارون نیز وجود دارد که اگر نقطه ای در فضای وارون نسبت به دستگاه مختصات کارتزین باشد واحد آن tpiba و اگر نسبت به بردار های b1,b2 و b3 که بردار های سلول واحد در این فضا هستند گزارش شود از واحد \( \(crystal\) استفاده می‌کنیم. سه رقم آخر مختصات شروع kpoint هاست که می‌تواند 1  1  1 نیز باشد که به معنای شیفت شروع این نقطه هاست. با این شیفت ها می‌توان ماتریسی را که قطری نیست، قطری کرد که روابط بهتر محاسبه شود. همچنین اگر کاپوینت در حالت gamma  باشد k=0 \(بردار موج 0 0 0\)است و برای مطالعه روی مولکول ها کاربرد دارد.  
 Kpoint ها می‌توانند یک، دو و یا سه بعدی باشند که طرز نوشتن هر یک در قسمت زیر توضیح داده شده است:
 
-K\_POINTS {automatic}  
- 1 1 6 0 0 0   یک بعدی  
-6 6 1 0 0 0    دو بعدی  
-6 6 6 0 0 0    سه بعدی
+```
+K_POINTS {automatic}
+1  1  6    0  0  0                  1 Dimensions       
+6  6  1    0  0  0                  2 Dimensions
+6  6  6    0  0  0                  3 Dimensions
+```
 
 برای درک بهتر به توضیح مختصری از مفاهیم می پردازیم توجه داشته باشید که این تمثیل ها فقط برای درک بهتر و ارتباط برقرار کردن با فضای مجازی می‌باشد و نگرش شخصی است. کاپوینت ها تعدای نقاط در فضای وارون می‌باشند که ما برای اجرای صحیح برنامه و افزایش سرعت اجرا به تعداد مشخص شده ای از آن ها نیاز داریم اگر این تعداد کم باشد قسمتی از نقاط فضای وارون را از دست داده ایم و اگر زیاد باشد حجم محاسبات افزایش پیدا می‌کند. برای مشخص کردن تعداد کاپوینت از ecutwfe استفاده  می‌کنیم که در واقع شعاع دایره ای به  شکل 16 است که کاپوینت ها در آن محدوده، لازم و کافی برای محاسبات هستند، مانند جعبه ای که توپ های بیلیارد در آن جای می گیرند. اما اعدادی که برای کاپوینت و ecut  به برنامه می دهیم شانسی نیست و با استفاده از محاسبات بدست آمده است. هر چه شبکه حقیقی  بزرگتر باشد فضای وارون آن کوچکتر است.
 
