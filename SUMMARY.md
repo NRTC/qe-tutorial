@@ -27,6 +27,7 @@
 * [محاسبه خواص مغناطیسی مواد](MagneticProperties.md)
 * [رسم ساختار نواری در کوانتوم اسپرسو](BandGapQE.md)
 * [محاسبه ساختار نواری مواد مغناطیسی](ElectronDenStateMagMaterial.md)
+* [محاسبه چگالی حالت الکترونی مواد مغناطیسی](MagneticProperties.md)
 * [مدل هابارد](HubbardModel.md)
 * [هاميلتوني هابارد](HubbardHamilton.md)
 * [بخش کاربردی LSDA + U](LSDA.md)
@@ -35,6 +36,5 @@
 * [محاسبه U](CompU.md)
 * [بررسی اتمFe](FeAtom.md)
 * [بررسی Nio](ComputeNiO.md)
-* [محاسبه چگالی حالت الکترونی مواد مغناطیسی](MagneticProperties.md)
 * [پایان](.md)
 
