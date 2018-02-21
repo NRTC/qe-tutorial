@@ -18,6 +18,8 @@
 * [بدست آوردن تراکم چگالی بار\|Charge Density](ChargeDen.md)
 * [خواص اپتیکی\|Optical Properties](OpticalProperties/README.md)
   * [تابع اتلاف انرژی](OpticalProperties/Waste.md)
+  * [مقدار گاف](OpticalProperties/Gap.md)
+  * [تابع دی‌الکتریک](OpticalProperties/Dielectric-Fun.md)
 * [تابع واندروالس](VanDerWaalsFun.md)
 * [B3LYP تابع](B3LYPFun.md)
 * [HSE تابع](HSE.md)
