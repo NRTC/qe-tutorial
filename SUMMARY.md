@@ -24,6 +24,8 @@
 * [B3LYP تابع](B3LYPFun.md)
 * [HSE تابع](HSE.md)
 * [فنون‌ها](Phonons/README.md)
+  * [‫محاسبه فرکانس‌های فنونی در مرکز ناحیه BZ ساختار FCC‬](Phonons/BZ-FCC.md)
+  * [‫محاسبه توزیع فنونی در مسیر تقارنی در BZ برای ساختار FCC سیلیکون \(پاشندگی فنونی\)‬](Phonons/BZ-FCC-Si.md)
 * [محاسبه خواص مغناطیسی مواد](MagneticProperties.md)
 * [رسم ساختار نواری در کوانتوم اسپرسو](BandGapQE.md)
 * [محاسبه ساختار نواری مواد مغناطیسی](BandGapMagnetMaterial.md)
