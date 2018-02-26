@@ -11,13 +11,13 @@ $$\Delta V=\alpha\sum_m|\varphi_m^I><\varphi_m^I|$$
 
 اگر تعریف کنیم :
 
-$$x_{IJ}^0=\frac{{d}{n_0^I}}{{d}{\alpha_J}}$$
+$$x_{IJ}^0=\frac{d n_0^I}{d \alpha_J}$$
 
-$$x_{IJ}=\frac{{d}{n^I}}{{d}{\alpha_J}}$$
+$$x_{IJ}=\frac{d n^I}{d \alpha_J}$$
 
 می‌توانیم U را به صورت زیر بنویسیم :
 
-$$U=-\frac{{d}{\alpha_I}}{{d}{n^I}}+\frac{{d}{\alpha_I}}{{d}{n_0^I}}=(x_0^{-1}-x^{-1})_{II}$$
+$$U=-\frac{d \alpha_I}{d n^I}+\frac{d \alpha_I}{d n_0^I}=(x_0^{-1}-x^{-1})_{II}$$
 
 بنابراین هدف ما محاسبه پاسخ دو ماتریس X و X0 است . ما از طریق مراحل زیر پیش میرویم :  
 1\) اجرای یک محاسبه SCF بدون اختلال  
