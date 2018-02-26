@@ -1,3 +1,10 @@
 {
-   "plugins": ["block-align"]
+   "plugins": ["block-align", "mathjax"]
+   {
+    "pluginsConfig": {
+        "mathjax":{
+            "forceSVG": true
+        }
+    }
+}
 }
